@@ -13,6 +13,6 @@ class ProductForm(BaseModel):
     def as_form(
             cls,
             name: str = Form(...),
-            price: int = Form(...)
+            price: str = Form(...)
     ):
         return cls(name=name,price=price)

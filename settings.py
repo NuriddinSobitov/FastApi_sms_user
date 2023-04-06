@@ -32,8 +32,8 @@ class Settings:
     TEST_USER_EMAIL: str = 'test@example.com'
     SMTP_HOST: str = os.getenv('SMTP_HOST', 'smtp.gmail.com')
     SMTP_PORT: str = os.getenv('SMTP_PORT', '465')
-    SMTP_EMAIL: str = os.getenv('SMTP_EMAIL', 'khasanjonmamadaliyev.eng@gmail.com')
-    SMTP_PASSWORD: str = os.getenv('SMTP_PASSWORD', 'ranxdcswxxrctkds')
+    SMTP_EMAIL: str = os.getenv('SMTP_EMAIL', 'sobitovnuriddin7655@gmail.com')
+    SMTP_PASSWORD: str = os.getenv('SMTP_PASSWORD', 'kmnuvjzyhbdfeulm')
 
 
 settings = Settings()

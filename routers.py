@@ -40,10 +40,11 @@ async def add_product(
     product = models.Products(**data)
     db.add(product)
     db.commit()
-    product = form.name
+    product_title = form.name
     users = db.query(models.Users).all()
     for i in users:
-        send_verification_email.delay(i,product)
-    return 'zor'
+        send_verification_email.delay(i,product_title)
+        print(users)
+    return 'success'
 
 
