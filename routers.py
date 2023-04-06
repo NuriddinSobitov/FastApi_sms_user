@@ -44,6 +44,6 @@ async def add_product(
     users = db.query(models.Users).all()
     for i in users:
         send_verification_email.delay(i,product)
-    return 'success'
+    return 'zor'
 
 
